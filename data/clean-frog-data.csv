@@ -1,0 +1,193 @@
+Binomial,Family,Genus,Adult_habitat,Life_history,Sex_dichromatism,SVL,mass,rootmass,eyesize
+Allophryne_ruthveni,Allophrynidae,Allophryne,Scansorial,Free-living larvae,Absent,23.76666667,1,0.991774825,3.2
+Eupsophus_roseus,Alsodidae,Eupsophus,Ground-dwelling,Free-living larvae,Absent,38.375,7.5,1.927345095,5.3625
+Alytes_obstetricans,Alytidae,Alytes,Ground-dwelling,Free-living larvae,Absent,37.46666667,6.666666667,1.869060121,6.366666667
+Discoglossus_pictus,Alytidae,Discoglossus,Ground-dwelling,Free-living larvae,Absent,62.64,24.4,2.888546522,7.55
+Allobates_femoralis,Aromobatidae,Allobates,Ground-dwelling,Free-living larvae,Absent,25.6,2.1,1.254969682,4.116666667
+Arthroleptis_poecilonotus,Arthroleptidae,Arthroleptis,Subfossorial,No free-living larvae,Absent,27.03333333,2.466666667,1.350761266,3.783333333
+Arthroleptis_variabilis,Arthroleptidae,Arthroleptis,Subfossorial,No free-living larvae,Absent,38.4,5.533333333,1.764430532,4.75
+Astylosternus_montanus,Arthroleptidae,Astylosternus,Ground-dwelling,Free-living larvae,NA,47.7,14.03333333,2.391979983,6.633333333
+Leptodactylodon_ovatus,Arthroleptidae,Leptodactylodon,Semiaquatic,Free-living larvae,Absent,34.56666667,5.833333333,1.750631255,4.25
+Leptopelis_parkeri,Arthroleptidae,Leptopelis,Scansorial,Free-living larvae,Present,51.16666667,6.666666667,1.81996652,7.55
+Nyctibates_corrugatus,Arthroleptidae,Nyctibates,Ground-dwelling,Free-living larvae,Absent,54,12.2,2.286116877,7.5
+Scotobleps_gabonicus,Arthroleptidae,Scotobleps,Ground-dwelling,Free-living larvae,Absent,49.2,11.83333333,2.278270139,7.533333333
+Trichobatrachus_robustus,Arthroleptidae,Trichobatrachus,Semiaquatic,Free-living larvae,Absent,120.7428571,203.4285714,5.77248706,12.57142857
+Ascaphus_truei,Ascaphidae,Ascaphus,Semiaquatic,Free-living larvae,Absent,38.95,6,1.809268122,5.5875
+Batrachyla_leptopus,Batrachylidae,Batrachyla,Ground-dwelling,Free-living larvae,Absent,27.03333333,2,1.234056873,4.016666667
+Batrachyla_taeniata,Batrachylidae,Batrachyla,Ground-dwelling,Free-living larvae,Absent,29.675,2.75,1.387373181,4.425
+Barbourula_busuangensis,Bombinatoridae,Barbourula,Aquatic,NA,Absent,59.475,24.25,2.733102465,8.2375
+Bombina_orientalis,Bombinatoridae,Bombina,Semiaquatic,Free-living larvae,Absent,42.76666667,5.333333333,1.740547413,5.7
+Brachycephalus_ephippium,Brachycephalidae,Brachycephalus,Subfossorial,No free-living larvae,Absent,16.3,0.833333333,0.93874059,2.4
+Ischnocnema_parva,Brachycephalidae,Ischnocnema,Subfossorial,No free-living larvae,NA,19.64,1.05,1.016396357,2.375
+Breviceps_mossambicus,Brevicipitidae,Breviceps,Subfossorial,No free-living larvae,Absent,39.85,10.1,2.15297908,4.625
+Callulina_kreffti,Brevicipitidae,Callulina,Scansorial,No free-living larvae,Absent,28.73333333,2.833333333,1.40884111,3.933333333
+Probreviceps_loveridgei,Brevicipitidae,Probreviceps,Subfossorial,No free-living larvae,Absent,43.06666667,10.43333333,2.12178802,4.533333333
+Spelaeophryne_methneri,Brevicipitidae,Spelaeophryne,Subfossorial,NA,Absent,38.16666667,5.433333333,1.706811568,2.716666667
+Adenomus_kelaartii,Bufonidae,Adenomus,Subfossorial,Free-living larvae,Absent,41.35,6.35,1.851673064,4.65
+Altiphrynoides_osgoodi,Bufonidae,Altiphrynoides,Ground-dwelling,Free-living larvae,Absent,43.5,8.066666667,1.981001301,4.6
+Anaxyrus_cognatus,Bufonidae,Anaxyrus,Ground-dwelling,Free-living larvae,Absent,53.43333333,23.13333333,2.840184263,8.116666667
+Anaxyrus_punctatus,Bufonidae,Anaxyrus,Ground-dwelling,Free-living larvae,Absent,49.36666667,11.16666667,2.207131947,6.083333333
+Atelopus_senex,Bufonidae,Atelopus,Ground-dwelling,Free-living larvae,Present,28.03333333,1.533333333,1.1530118600000001,3.6
+Bufo_bufo,Bufonidae,Bufo,Ground-dwelling,Free-living larvae,Present,71.4,53.1,3.553428952,8.333333333
+Bufotes_viridis,Bufonidae,Bufotes,Ground-dwelling,Free-living larvae,Present,60.4,25.73333333,2.897255597,7.933333333
+Duttaphrynus_melanostictus,Bufonidae,Duttaphrynus,Ground-dwelling,Free-living larvae,Absent,69.3,34.43333333,3.18759279,8.233333333
+Duttaphrynus_stomaticus,Bufonidae,Duttaphrynus,Ground-dwelling,Free-living larvae,Present,59.43333333,22.86666667,2.838196022,7.1
+Epidalea_calamita,Bufonidae,Epidalea,Ground-dwelling,Free-living larvae,Absent,57.4,20.2,2.716064766,7.9
+Incilius_luetkenii,Bufonidae,Incilius,Ground-dwelling,Free-living larvae,Present,37.3,3,1.44224957,5.9
+Ingerophrynus_galeatus,Bufonidae,Ingerophrynus,Ground-dwelling,Free-living larvae,Absent,72.7,45.63333333,3.5015351,8.066666667
+Leptophryne_borbonica,Bufonidae,Leptophryne,Subfossorial,Free-living larvae,Absent,29.83333333,3.3,1.473047669,3.883333333
+Melanophryniscus_stelzneri,Bufonidae,Melanophryniscus,Ground-dwelling,Free-living larvae,Absent,30.2,2.9,1.423746704,3.7
+Mertensophryne_micranotis,Bufonidae,Mertensophryne,Subfossorial,Free-living larvae,Present,18.53333333,0.6,0.841679064,2.316666667
+Rentapia_hosii,Bufonidae,Rentapia,Scansorial,Free-living larvae,Present,84.575,51.3,3.662516333,9.65
+Rhaebo_glaberrimus,Bufonidae,Rhaebo,Ground-dwelling,Free-living larvae,Absent,105.2333333,94.23333333,4.362685679,13.86666667
+Rhaebo_nasicus,Bufonidae,Rhaebo,Subfossorial,NA,NA,56.86666667,16.06666667,2.422619354,7.533333333
+Rhinella_marina,Bufonidae,Rhinella,Ground-dwelling,Free-living larvae,Present,113.8,138.3333333,5.152701151,14.31666667
+Rhinella_ocellata,Bufonidae,Rhinella,Ground-dwelling,NA,Absent,46.2,14.1,2.415867089,6.3
+Schismaderma_carens,Bufonidae,Schismaderma,Ground-dwelling,Free-living larvae,Present,76.1,41.96666667,3.392832306,7.983333333
+Sclerophrys_brauni,Bufonidae,Sclerophrys,Ground-dwelling,Free-living larvae,Absent,82.03333333,48.46666667,3.600216798,9.933333333
+Sclerophrys_maculata,Bufonidae,Sclerophrys,Ground-dwelling,Free-living larvae,Absent,53.33333333,14.66666667,2.395503169,7.116666667
+Calyptocephalella_gayi,Calyptocephalellidae,Calyptocephalella,Semiaquatic,Free-living larvae,Absent,134.9,384.3333333,7.253914614,13.1
+Espadarana_prosoblepon,Centrolenidae,Espadarana,Scansorial,Free-living larvae,Absent,24.36666667,0.766666667,0.914846512,3.733333333
+Teratohyla_spinosa,Centrolenidae,Teratohyla,Scansorial,Free-living larvae,Absent,20.5,0.8,0.928317767,3.5
+Cornufer_guppyi,Ceratobatrachidae,Cornufer,Ground-dwelling,No free-living larvae,NA,120.75,176.5,5.412687371,15.775
+Platymantis_hazelae,Ceratobatrachidae,Platymantis,Scansorial,No free-living larvae,Absent,30.55,1.95,1.24703732,4.675
+Ceratophrys_cornuta,Ceratophryidae,Ceratophrys,Subfossorial,Free-living larvae,Absent,87.5,111.3333333,4.726620717,10.7
+Ceratophrys_ornata,Ceratophryidae,Ceratophrys,Ground-dwelling,Free-living larvae,Absent,108.6333333,176.6666667,5.603398013,10.76666667
+Lepidobatrachus_laevis,Ceratophryidae,Lepidobatrachus,Semiaquatic,Free-living larvae,Absent,64.8,51.5,3.342544793,6.65
+Conraua_crassipes,Conrauidae,Conraua,Semiaquatic,Free-living larvae,Absent,55.43333333,21.36666667,2.736329803,7.716666667
+Barycholos_pulcher,Craugastoridae,Barycholos,Subfossorial,No free-living larvae,NA,24.3,1.966666667,1.251331896,3.133333333
+Craugastor_fitzingeri,Craugastoridae,Craugastor,Scansorial,No free-living larvae,Absent,39.26666667,5.933333333,1.720379085,5.133333333
+Craugastor_podiciferus,Craugastoridae,Craugastor,Subfossorial,No free-living larvae,Absent,27.63333333,2.366666667,1.328962659,3.85
+Strabomantis_bufoniformis,Craugastoridae,Strabomantis,Ground-dwelling,No free-living larvae,Absent,28.4,2.75,1.398482818,4.825
+Thoropa_miliaris,Cycloramphidae,Thoropa,Ground-dwelling,Free-living larvae,Absent,55.06666667,17.33333333,2.476031716,7.6
+Dendrobates_auratus,Dendrobatidae,Dendrobates,Scansorial,Free-living larvae,Absent,31,2.766666667,1.390263462,3.85
+Euphlyctis_cyanophlyctis,Dicroglossidae,Euphlyctis,Semiaquatic,Free-living larvae,Absent,48.7,12.76666667,2.327477327,5.816666667
+Fejervarya_limnocharis,Dicroglossidae,Fejervarya,Semiaquatic,Free-living larvae,Absent,47.3,7.933333333,1.993895954,6.116666667
+Hoplobatrachus_tigerinus,Dicroglossidae,Hoplobatrachus,Semiaquatic,Free-living larvae,Present,105.7,125.9666667,4.892829829,12.48333333
+Occidozyga_laevis,Dicroglossidae,Occidozyga,Aquatic,Free-living larvae,Absent,28.63333333,3.2,1.464267295,3.55
+Occidozyga_lima,Dicroglossidae,Occidozyga,Aquatic,Free-living larvae,Absent,25.86666667,3.033333333,1.446399163,3.266666667
+Quasipaa_fasciculispina,Dicroglossidae,Quasipaa,Semiaquatic,NA,Absent,107.5333333,135.3333333,5.1086894,15.15
+Diasporus_diastema,Eleutherodactylidae,Diasporus,Scansorial,No free-living larvae,Absent,17.9,0.966666667,0.987752962,2.916666667
+Eleutherodactylus_coqui,Eleutherodactylidae,Eleutherodactylus,Scansorial,No free-living larvae,Absent,28.05,2.35,1.329436011,4.425
+Eleutherodactylus_marnockii,Eleutherodactylidae,Eleutherodactylus,Ground-dwelling,No free-living larvae,Absent,21.86666667,0.9,0.950194265,3.266666667
+Eleutherodactylus_planirostris,Eleutherodactylidae,Eleutherodactylus,Ground-dwelling,No free-living larvae,Absent,21.83333333,1.233333333,1.072236674,3.066666667
+Heleophryne_purcelli,Heleophrynidae,Heleophryne,Semiaquatic,Free-living larvae,Present,41.25,6,1.817120593,6.225
+Cryptobatrachus_boulengeri,Hemiphractidae,Cryptobatrachus,Semiaquatic,No free-living larvae,NA,70.8,38,3.361975407,11.3
+Flectonotus_fitzgeraldi,Hemiphractidae,Flectonotus,Scansorial,Free-living larvae,Absent,21.16666667,0.7,0.886551478,3.683333333
+Gastrotheca_cornuta,Hemiphractidae,Gastrotheca,Scansorial,No free-living larvae,Absent,73.7,27.5,3.015625122,11.2
+Gastrotheca_pseustes,Hemiphractidae,Gastrotheca,Scansorial,Free-living larvae,Absent,44.3,8.333333333,2.022455291,6.3
+Hemiphractus_bubalus,Hemiphractidae,Hemiphractus,Scansorial,No free-living larvae,NA,50.9,9,1.954230822,6.675
+Stefania_evansi,Hemiphractidae,Stefania,Scansorial,No free-living larvae,Absent,59.825,15.575,2.433593997,8.6125
+Hemisus_marmoratus,Hemisotidae,Hemisus,Fossorial,Free-living larvae,Absent,37.85,8,1.971448555,3.25
+Acris_gryllus,Hylidae,Acris,Ground-dwelling,Free-living larvae,Absent,20,0.866666667,0.947067388,2.816666667
+Agalychnis_callidryas,Hylidae,Agalychnis,Scansorial,Free-living larvae,Absent,55.625,10,2.131358279,7.375
+Aplastodiscus_albofrenatus,Hylidae,Aplastodiscus,Scansorial,NA,NA,38.1,2.6,1.375068867,5.4
+Dendropsophus_parviceps,Hylidae,Dendropsophus,Scansorial,Free-living larvae,Absent,22.43333333,1.2,1.062110522,3.616666667
+Hyla_chinensis,Hylidae,Hyla,Scansorial,Free-living larvae,Absent,33.8,3,1.435134489,4.466666667
+Osteocephalus_taurinus,Hylidae,Osteocephalus,Scansorial,Free-living larvae,Absent,71.4,19.56666667,2.684557089,9.633333333
+Pseudis_paradoxa,Hylidae,Pseudis,Aquatic,Free-living larvae,Absent,55.2,24.16666667,2.886642755,7.283333333
+Scinax_ruber,Hylidae,Scinax,Scansorial,Free-living larvae,Absent,38.8,4.233333333,1.617052624,4.95
+Trachycephalus_typhonius,Hylidae,Trachycephalus,Scansorial,Free-living larvae,Present,65.63333333,22.13333333,2.780755487,8.716666667
+Hylodes_nasus,Hylodidae,Hylodes,Ground-dwelling,Free-living larvae,NA,41.43333333,6,1.813342574,6.116666667
+Afrixalus_dorsalis,Hyperoliidae,Afrixalus,Scansorial,Free-living larvae,Absent,25.3,1.366666667,1.10916667,3.65
+Hyperolius_bolifambae,Hyperoliidae,Hyperolius,Scansorial,Free-living larvae,Present,25.4,1.933333333,1.239158631,4.383333333
+Hyperolius_viridiflavus,Hyperoliidae,Hyperolius,Scansorial,Free-living larvae,Present,24.86666667,1.3,1.090913465,3.35
+Phlyctimantis_verrucosus,Hyperoliidae,Phlyctimantis,Scansorial,Free-living larvae,Absent,51.3,9.25,2.096698369,6.725
+Leiopelma_hochstetteri,Leiopelmatidae,Leiopelma,Semiaquatic,Free-living larvae,Absent,38.96666667,5.333333333,1.740547413,6.283333333
+Leptodactylus_albilabris,Leptodactylidae,Leptodactylus,Ground-dwelling,Free-living larvae,NA,32.9,2.966666667,1.431668673,4.416666667
+Leptodactylus_bolivianus,Leptodactylidae,Leptodactylus,Ground-dwelling,Free-living larvae,Absent,83.93333333,41.73333333,3.443458361,8.866666667
+Leptodactylus_melanonotus,Leptodactylidae,Leptodactylus,Ground-dwelling,Free-living larvae,Absent,33.8,3.3,1.488704249,3.933333333
+Lithodytes_lineatus,Leptodactylidae,Lithodytes,Subfossorial,Free-living larvae,NA,46.2,7.6,1.966095145,5.6
+Physalaemus_cuvieri,Leptodactylidae,Physalaemus,Ground-dwelling,NA,Absent,26.5,2.166666667,1.292858191,3.5
+Pleurodema_thaul,Leptodactylidae,Pleurodema,Ground-dwelling,Free-living larvae,Present,40.23333333,6.733333333,1.886586015,5.216666667
+Limnodynastes_salmini,Limnodynastidae,Limnodynastes,Subfossorial,Free-living larvae,Absent,61.76666667,24.33333333,2.888505701,7.4
+Aglyptodactylus_madagascariensis,Mantellidae,Aglyptodactylus,Subfossorial,Free-living larvae,Present,42.63333333,8.633333333,1.991779489,6.166666667
+Mantella_aurantiaca,Mantellidae,Mantella,Ground-dwelling,Free-living larvae,Absent,21.65,1.15,1.047469342,2.6
+Leptobrachium_chapaense,Megophryidae,Leptobrachium,Ground-dwelling,Free-living larvae,Absent,54.66666667,13,2.306363941,7.9
+Megophrys_brachykolos,Megophryidae,Megophrys,Semiaquatic,Free-living larvae,NA,40.73333333,4.666666667,1.669117649,5.666666667
+Megophrys_feae,Megophryidae,Megophrys,Subfossorial,Free-living larvae,Absent,114.6,106.3333333,4.733289983,11.16666667
+Megophrys_intermedia,Megophryidae,Megophrys,Ground-dwelling,Free-living larvae,NA,102.1,84,4.37951914,10.9
+Megophrys_microstoma,Megophryidae,Megophrys,Ground-dwelling,Free-living larvae,Absent,35.5,3,1.44224957,4.866666667
+Megophrys_nasuta,Megophryidae,Megophrys,Ground-dwelling,Free-living larvae,Absent,101,82.25,4.20222952,12.3
+Scutiger_boulengeri,Megophryidae,Scutiger,Ground-dwelling,Free-living larvae,NA,54.2,13,2.347175618,6.85
+Micrixalus_phyllophilus,Micrixalidae,Micrixalus,Subfossorial,NA,NA,32.55,4.45,1.643692998,3.95
+Anodonthyla_boulengerii,Microhylidae,Anodonthyla,Scansorial,Free-living larvae,Absent,19,0.4,0.7368063,2.3
+Chaperina_fusca,Microhylidae,Chaperina,Ground-dwelling,Free-living larvae,Absent,22.83333333,1.8,1.213911269,3.05
+Chiasmocleis_albopunctata,Microhylidae,Chiasmocleis,Subfossorial,NA,Absent,27.8,1.9,1.21943627,2.2
+Cophixalus_cheesmanae,Microhylidae,Cophixalus,Scansorial,NA,NA,26.7,2.3,1.317663049,3.7
+Cophixalus_neglectus,Microhylidae,Cophixalus,Subfossorial,No free-living larvae,Absent,20.93333333,1.466666667,1.121083339,3
+Ctenophryne_aterrima,Microhylidae,Ctenophryne,Subfossorial,Free-living larvae,Absent,46.25,10.4,2.1684609,3.95
+Dermatonotus_muelleri,Microhylidae,Dermatonotus,Fossorial,Free-living larvae,Absent,62.13333333,30.43333333,3.116406253,5.133333333
+Dyscophus_antongilii,Microhylidae,Dyscophus,Ground-dwelling,Free-living larvae,Present,68.33333333,44.7,3.422307553,9.8
+Elachistocleis_ovalis,Microhylidae,Elachistocleis,Subfossorial,Free-living larvae,Absent,35.9,4.266666667,1.610268376,2.6
+Gastrophryne_olivacea,Microhylidae,Gastrophryne,Subfossorial,Free-living larvae,Absent,28.08,2.166666667,1.28405772,2.18
+Gastrophrynoides_borneensis,Microhylidae,Gastrophrynoides,Subfossorial,NA,NA,13.2,0.3,0.66943295,1.55
+Hoplophryne_rogersi,Microhylidae,Hoplophryne,Ground-dwelling,Free-living larvae,Absent,24.2,1.833333333,1.215566394,2.966666667
+Hylophorbus_rufescens,Microhylidae,Hylophorbus,Ground-dwelling,No free-living larvae,NA,36.8,6.15,1.826139695,4.775
+Kalophrynus_interlineatus,Microhylidae,Kalophrynus,Subfossorial,NA,Absent,38.23333333,7.366666667,1.929476177,4.416666667
+Kalophrynus_pleurostigma,Microhylidae,Kalophrynus,Subfossorial,Free-living larvae,Absent,44.66666667,10.53333333,2.154306042,5.5
+Kaloula_conjuncta,Microhylidae,Kaloula,Scansorial,Free-living larvae,NA,43.2,9.466666667,2.072499448,4.9
+Kaloula_indochinensis,Microhylidae,Kaloula,Ground-dwelling,NA,Absent,56.5,18,2.61984162,5.45
+Kaloula_pulchra,Microhylidae,Kaloula,Ground-dwelling,Free-living larvae,Absent,66.85,39.75,3.406897635,6.85
+Mantophryne_lateralis,Microhylidae,Mantophryne,Ground-dwelling,No free-living larvae,NA,30.73333333,3.166666667,1.419712469,3.95
+Melanobatrachus_indicus,Microhylidae,Melanobatrachus,Subfossorial,NA,NA,28.13333333,2.333333333,1.28004725,3.866666667
+Microhyla_annectens,Microhylidae,Microhyla,Ground-dwelling,Free-living larvae,Absent,17.36666667,0.6,0.828551573,2.2
+Microhyla_heymonsi,Microhylidae,Microhyla,Subfossorial,NA,Absent,19.55,1.55,1.124161945,2.275
+Oreophryne_variabilis,Microhylidae,Oreophryne,Scansorial,NA,NA,25.36666667,1.8,1.213911269,3.15
+Phrynomantis_microps,Microhylidae,Phrynomantis,Subfossorial,Free-living larvae,Absent,52.4,15.4,2.420893339,4.9
+Plethodontohyla_notosticta,Microhylidae,Plethodontohyla,Scansorial,Free-living larvae,Absent,37.6,4.866666667,1.687433406,4.3
+Scaphiophryne_marmorata,Microhylidae,Scaphiophryne,Subfossorial,Free-living larvae,Absent,39.93333333,8.566666667,2.003121282,5.2
+Synapturanus_mirandaribeiroi,Microhylidae,Synapturanus,Subfossorial,Free-living larvae,NA,31.06666667,2.9,1.424908204,2.066666667
+Uperodon_globulosus,Microhylidae,Uperodon,Fossorial,Free-living larvae,Absent,69.5,72,4.160167646,4.55
+Uperodon_systoma,Microhylidae,Uperodon,Fossorial,NA,Absent,53.86666667,26.63333333,2.951528915,5.35
+Crinia_signifera,Myobatrachidae,Crinia,Ground-dwelling,Free-living larvae,Absent,25.225,2.25,1.30550318,3.4
+Mixophyes_fasciolatus,Myobatrachidae,Mixophyes,Ground-dwelling,Free-living larvae,Absent,49.93333333,15,2.25992105,7.683333333
+Myobatrachus_gouldii,Myobatrachidae,Myobatrachus,Fossorial,No free-living larvae,Absent,39.1,7.5,1.918947945,3.35
+Uperoleia_laevigata,Myobatrachidae,Uperoleia,Ground-dwelling,NA,NA,21.25,1.25,1.064980263,2.6125
+Nasikabatrachus_sahyadrensis,Nasikabatrachidae,Nasikabatrachus,Fossorial,Free-living larvae,Absent,72.575,72.5,3.906165647,2.175
+Nyctibatrachus_humayuni,Nyctibatrachidae,Nyctibatrachus,Semiaquatic,Free-living larvae,Absent,43.76666667,10.43333333,2.148449693,6.1
+Odontobatrachus_natator,Odontobatrachidae,Odontobatrachus,Semiaquatic,Free-living larvae,Absent,52.98333333,14.223333330000001,2.412096187,7.18
+Odontophrynus_americanus,Odontophrynidae,Odontophrynus,Ground-dwelling,Free-living larvae,Absent,47.43333333,14.06666667,2.407234046,6.733333333
+Proceratophrys_boiei,Odontophrynidae,Proceratophrys,Subfossorial,Free-living larvae,Absent,58.56666667,19.26666667,2.662206948,8.566666667
+Pelobates_cultripes,Pelobatidae,Pelobates,Fossorial,Free-living larvae,Absent,75.63333333,60.33333333,3.879772254,11.21666667
+Pelobates_syriacus,Pelobatidae,Pelobates,Fossorial,Free-living larvae,Absent,65.35,34.2,3.031555734,7.7
+Nyctimystes_kubori,Pelodryadidae,Nyctimystes,Scansorial,Free-living larvae,NA,44.8,7.666666667,1.923762194,6.5
+Nyctimystes_papua,Pelodryadidae,Nyctimystes,Scansorial,NA,NA,49.3,5.6,1.772377422,6.45
+Ranoidea_platycephala,Pelodryadidae,Ranoidea,Ground-dwelling,Free-living larvae,Absent,51.23333333,16.33333333,2.524479916,6.333333333
+Pelodytes_punctatus,Pelodytidae,Pelodytes,Ground-dwelling,Free-living larvae,Absent,35.64,4.4,1.584872749,4.41
+Petropedetes_parkeri,Petropedetidae,Petropedetes,Scansorial,Free-living larvae,Absent,53.36666667,14.46666667,2.39220799,7.266666667
+Phrynobatrachus_krefftii,Phrynobatrachidae,Phrynobatrachus,Semiaquatic,Free-living larvae,Absent,30.66666667,3.2,1.472650077,4.683333333
+Phrynobatrachus_natalensis,Phrynobatrachidae,Phrynobatrachus,Ground-dwelling,Free-living larvae,Present,26.93333333,2.4,1.337691406,3.7
+Agalychnis_dacnicolor,Phyllomedusidae,Agalychnis,Scansorial,Free-living larvae,Absent,80.86666667,22.03333333,2.784048657,8.7
+Cruziohyla_calcarifer,Phyllomedusidae,Cruziohyla,Scansorial,Free-living larvae,Absent,64.2,12.4,2.314589055,8.5
+Hymenochirus_boettgeri,Pipidae,Hymenochirus,Aquatic,Free-living larvae,Absent,32.875,2.75,1.39666744,1.7125
+Pipa_carvalhoi,Pipidae,Pipa,Aquatic,Free-living larvae,Absent,46.675,11,2.1878757,2.75
+Pipa_pipa,Pipidae,Pipa,Aquatic,No free-living larvae,Absent,118.7666667,174.3333333,5.53625717,3.7
+Pseudhymenochirus_merlini,Pipidae,Pseudhymenochirus,Aquatic,Free-living larvae,Absent,43.225,6.5,1.862192374,3.4125
+Xenopus_fraseri,Pipidae,Xenopus,Aquatic,Free-living larvae,Absent,47.83333333,10.33333333,2.174648999,3.266666667
+Xenopus_tropicalis,Pipidae,Xenopus,Aquatic,Free-living larvae,Absent,28.7,3.666666667,1.506430404,1.916666667
+Ptychadena_mascareniensis,Ptychadenidae,Ptychadena,Ground-dwelling,Free-living larvae,Absent,48.43333333,12.03333333,2.278751543,5.833333333
+Ptychadena_oxyrhynchus,Ptychadenidae,Ptychadena,Ground-dwelling,Free-living larvae,Absent,57.8,20.7,2.728954676,7.35
+Amietia_angolensis,Pyxicephalidae,Amietia,Semiaquatic,Free-living larvae,Absent,72.2,33.16666667,3.211670375,8.766666667
+Aubria_subsigillata,Pyxicephalidae,Aubria,Aquatic,Free-living larvae,Absent,89.26666667,63.66666667,3.894176798,10.65
+Pyxicephalus_edulis,Pyxicephalidae,Pyxicephalus,Ground-dwelling,Free-living larvae,Present,58.5,22.03333333,2.679885384,7.633333333
+Strongylopus_grayii,Pyxicephalidae,Strongylopus,Ground-dwelling,Free-living larvae,Absent,26.6,2.4,1.32517855,3.5
+Amolops_ricketti,Ranidae,Amolops,Semiaquatic,Free-living larvae,Absent,50.96666667,11.93333333,2.277883935,7.05
+Odorrana_hosii,Ranidae,Odorrana,Semiaquatic,Free-living larvae,Present,76,32.2,3.016109325,10.61666667
+Pelophylax_ridibundus,Ranidae,Pelophylax,Semiaquatic,Free-living larvae,Absent,83.06666667,63.16666667,3.979112312,9.633333333
+Rana_amurensis,Ranidae,Rana,Ground-dwelling,Free-living larvae,NA,52.9,10.66666667,2.192940546,6.016666667
+Rana_chensinensis,Ranidae,Rana,Ground-dwelling,Free-living larvae,Absent,57.63333333,18.3,2.584338979,6.733333333
+Rana_japonica,Ranidae,Rana,Ground-dwelling,Free-living larvae,Absent,60.05,17.5,2.593183105,7.1
+Rana_temporaria,Ranidae,Rana,Ground-dwelling,Free-living larvae,Present,68.56,29.96333333,3.099353209,7.568333333
+Sylvirana_guentheri,Ranidae,Sylvirana,Semiaquatic,Free-living larvae,NA,65.86666667,21.9,2.73868771,8.5
+Kurixalus_odontotarsus,Rhacophoridae,Kurixalus,Scansorial,NA,Absent,33.46666667,4,1.587401052,5.316666667
+Rhacophorus_dennysi,Rhacophoridae,Rhacophorus,Scansorial,Free-living larvae,Absent,92.66666667,38.16666667,3.363471549,9.7
+Rhinoderma_darwinii,Rhinodermatidae,Rhinoderma,Ground-dwelling,No free-living larvae,Absent,27.45,2.5,1.35108531,3.7
+Rhinophrynus_dorsalis,Rhinophrynidae,Rhinophrynus,Fossorial,Free-living larvae,Absent,67.7,51.25,3.706990595,4.075
+Scaphiopus_couchii,Scaphiopodidae,Scaphiopus,Ground-dwelling,Free-living larvae,Present,55.9,18.66666667,2.630826811,8.133333333
+Scaphiopus_holbrookii,Scaphiopodidae,Scaphiopus,Ground-dwelling,Free-living larvae,Absent,65.83333333,27.66666667,3.012925111,8.466666667
+Spea_bombifrons,Scaphiopodidae,Spea,Ground-dwelling,Free-living larvae,Absent,52.825,14.5,2.436882782,7.425
+Spea_intermontana,Scaphiopodidae,Spea,Ground-dwelling,Free-living larvae,Absent,45.6,12.5,2.320381587,6.95
+Spea_multiplicata,Scaphiopodidae,Spea,Ground-dwelling,Free-living larvae,Absent,48.23333333,13,2.339747258,6.883333333
+Sooglossus_sechellensis,Sooglossidae,Sooglossus,Subfossorial,Free-living larvae,Absent,20.66666667,1.033333333,0.99936921,3.45
+Telmatobius_culeus,Telmatobiidae,Telmatobius,Aquatic,Free-living larvae,Absent,86.82,65.2,3.989967886,8.78
