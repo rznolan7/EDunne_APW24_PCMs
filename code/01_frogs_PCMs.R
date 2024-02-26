@@ -63,23 +63,6 @@ View(mydata) # open a new tab in RStudio
 
 ## (You can see the full list of variables and their descriptions in the 00_frogs_cleaning.R script)
 
-## Let's do a quick check of the distribution of our data
-## First, the raw continuous data:
-p1 <- ggplot(mydata_r, aes(x = eyesize)) +
-  geom_histogram(bins = 20, fill = "turquoise4") +
-  theme_bw(base_size = 14)
-p1 
-
-## And now with it log-tranformed:
-p2 <- ggplot(mydata_r, aes(x = log(eyesize))) +
-  geom_histogram(bins = 20, fill = "chartreuse4") +
-  theme_bw(base_size = 14)
-p2
-
-## _______________________________________________
-## Q: Why might we log-transform continuous data?
-## _______________________________________________
-
 
 ## Next, let's plot these trait data onto the phylogeny!
 ## The contMap() function in the R package 'phytools' projects the observed and 
@@ -89,6 +72,9 @@ p2
 
 
 ## Take our trait of interest (i.e. eyesize) and log transform it:
+## ______________________________________________
+## Q: Why do we log-transform continuous data?
+## ______________________________________________
 logEye <- log(pull(mydata, eyesize))
 names(logEye) <- mydata$Binomial # give these values names (i.e. species names)
 head(logEye) # look at the first few rows
@@ -154,7 +140,7 @@ mydata <- mydata[match(mytree$tip.label, mydata$Binomial), ]
 ## Now let's fit our models!
 
 ## (1) Fit the Brownian model:
-BM <- fitContinuous(mytree, logES, model = c("BM"))
+BM <- fitContinuous(mytree, logEye, model = c("BM"))
 BM # check the output 
 
 ##________________________________________________________________
@@ -163,7 +149,7 @@ BM # check the output
 
 
 ## (2) Fit the Ornstein-Uhlenbeck (OU) model
-OU <- fitContinuous(mytree, logES, model = c("OU"))
+OU <- fitContinuous(mytree, logEye, model = c("OU"))
 OU # check the output
 
 
@@ -190,4 +176,8 @@ aicw(AICscores)
 
 ## Take the code from above and modify it to examine the phylogenetic signal
 ##    of body mass evolution and/or gestation length in primates
+
+
+
+
 
