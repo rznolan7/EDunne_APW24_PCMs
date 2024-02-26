@@ -24,7 +24,7 @@ library(viridis)
 
 # Part 0: Data cleaning --------------------------------------------------------
 
-## Prior to this practical, I have cleaned the raw data files, which
+## Prior to this practical, I cleaned the raw data files, which
 ##    is a very important step in all kinds of analyses!
 ## You can see the steps in the other script "00_frogs_cleaning.R"
 ## This involved steps to ensure that the species names in the data
