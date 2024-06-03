@@ -2,7 +2,7 @@
 #
 #   Introduction to Phylogenetic Comparative Methods
 #
-#   Date:   29.02.2024
+#   Date:   04.06.2024
 #
 #   Author: Emma Dunne (emma.dunne@fau.de)
 #
@@ -16,19 +16,10 @@
 
 ## Load packages:
 library(tidyverse)
-library(ape)
 library(geiger)
+library(ape)
 library(phytools)
 library(viridis)
-
-
-# Part 0: Data cleaning --------------------------------------------------------
-
-## Prior to this practical, I cleaned the raw data files, which
-##    is a very important step in all kinds of analyses!
-## You can see the steps in the other script "00_frogs_cleaning.R"
-## This involved steps to ensure that the species names in the data
-##    matched the species names in the tree and vice versa
 
 
 
@@ -64,20 +55,37 @@ View(mydata) # open a new tab in RStudio
 ## (You can see the full list of variables and their descriptions in the 00_frogs_cleaning.R script)
 
 
+## Let's do a quick check of the distribution of our data
+## First, the raw continuous data:
+p1 <- ggplot(mydata, aes(x = eyesize)) +
+  geom_histogram(bins = 20, fill = "turquoise4") +
+  theme_bw(base_size = 14)
+p1 
+
+## And now with it log-tranformed:
+p2 <- ggplot(mydata, aes(x = log(eyesize))) +
+  geom_histogram(bins = 20, fill = "chartreuse4") +
+  theme_bw(base_size = 14)
+p2
+
+## _______________________________________________
+## Q: Why might we log-transform continuous data?
+## _______________________________________________
+
+
+## Take our trait of interest (i.e. eyesize) and log transform it:
+logEye <- log(pull(mydata, eyesize))
+names(logEye) <- mydata$Binomial # give these values names (i.e. species names)
+head(logEye) # look at the first few rows
+
+
+
 ## Next, let's plot these trait data onto the phylogeny!
 ## The contMap() function in the R package 'phytools' projects the observed and 
 ##    reconstructed values of a continuous trait onto the edges of a tree using a 
 ##    color gradient. We will use the colour gradients from another R package, 
 ##    'viridis' to ensure the output is as readable as possible.
 
-
-## Take our trait of interest (i.e. eyesize) and log transform it:
-## ______________________________________________
-## Q: Why do we log-transform continuous data?
-## ______________________________________________
-logEye <- log(pull(mydata, eyesize))
-names(logEye) <- mydata$Binomial # give these values names (i.e. species names)
-head(logEye) # look at the first few rows
 
 ## Create "contMap" object using this log-transformed data:
 frog_contMap <- contMap(mytree, logEye, 

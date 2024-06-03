@@ -2,7 +2,7 @@
 #
 #   Introduction to Phylogenetic Comparative Methods
 #
-#   Date:   29.02.2024
+#   Date:   04.06.2024
 #
 #   Author: Emma Dunne (emma.dunne@fau.de)
 #
@@ -17,7 +17,7 @@
 library(tidyverse)
 library(geiger)
 
-## This short script was used to clean up our phylogenetic and trait data
+## This short script cleans up our phylogenetic and trait data
 ## This is an important step in any form of data analysis
 
 ## The following tree and trait data are from Thomas et al. (2020)
