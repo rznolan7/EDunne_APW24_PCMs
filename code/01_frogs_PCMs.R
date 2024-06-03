@@ -109,7 +109,14 @@ plot(frog_contMap, fsize = c(0.4, 1), outline = FALSE, lwd = c(3, 7), leg.txt = 
 
 # Part 2: Phylogenetic signal --------------------------------------------------
 
-## Let's check the phylogenetic signal of frog eye size using Pagel’s λ (lambda)
+
+## Phylogenetic signal is the pattern where close relatives have more similar 
+##    trait values than more distant relatives. 
+## There are two popular methods for estimating phylogenetic signal:
+##      1. Pagel’s λ (lambda)
+##      2. Blomberg’s K
+
+## First, let's check the phylogenetic signal of frog eye size using Pagel’s λ (lambda)
 
 ## Estimate Pagel’s λ (lambda) using the function phylosig() in the package 'phytools'
 lambdaEye <- phylosig(mytree, logEye, method = "lambda", test = TRUE)
@@ -122,8 +129,22 @@ lambdaEye # take a look at the output
 ##    different from 0, i.e. there is significant phylogenetic signal in log eye size
 
 
+## Next, the same but with Blomberg’s K, also using the phytools package:
+KEye <- phylosig(mytree, logEye, method = "K", test = TRUE, nsim = 1000)
+## Additionally we add the argument nsim = 1000. This is because we need to use a 
+##    randomisation test to determine whether K is significantly different from 0
+KEye
+
+## Interpreting the output:
+##    The observed value of K is  compared to the randomized values. The p value
+##    tells us how many times out of 1000, a randomised value of K is more extreme
+##    than the observed value. If this number is low, the p value is low (e.g. 
+##    if 5 out of 1000 randomised values of K are more extreme than the observed
+##    value p = 5/1000 = 0.005)
+
+
 ##______________________________________
-## Bonus exercise for independent work:
+## Bonus exercise:
 ##  - What is λ for snout vent length?
 ##______________________________________
 
@@ -131,6 +152,7 @@ lambdaEye # take a look at the output
 
 
 # Evolutionary model fitting analyses -------------------------------------
+
 
 ## Let's set up an evolutionary model-fitting analysis to characterize the 
 ##    evolutionary mode of frog eye size across the phylogeny
@@ -174,7 +196,7 @@ aicw(AICscores)
 
 
 
-# Bonus independent work --------------------------------------------------
+# Independent work --------------------------------------------------------
 
 ## In the data folder there is another tree (primate-tree.nex) and trait 
 ##    dataset (primate-data.csv) for investigating the evolution of primate 
@@ -182,8 +204,9 @@ aicw(AICscores)
 ##    (https://esajournals.onlinelibrary.wiley.com/doi/10.1890/08-1494.1) 
 ##    and 10kTrees (https://10ktrees.nunn-lab.org/)
 
-## Take the code from above and modify it to examine the phylogenetic signal
-##    of body mass evolution and/or gestation length in primates
+## YOUR TASK:
+##   Take the we have just used and modify it to examine the phylogenetic
+##    signal of body mass evolution and/or gestation length in primates
 
 
 
