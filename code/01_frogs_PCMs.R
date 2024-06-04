@@ -187,7 +187,7 @@ OU # check the output
 ## A lower 'fit' value indicates the preferred, or 'best' model:
 AICscores <- setNames(c(BM$opt$aic, OU$opt$aic), c("BM","OU"))
 aicw(AICscores)
-
+<- <- <- 
 ## ___________________________________________________________
 ## Q: Which is the 'best' model?
 ## Q: What does this tell you about frog eye size evolution?
