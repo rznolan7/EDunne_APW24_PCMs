@@ -2,13 +2,12 @@
 #
 #   Introduction to Phylogenetic Comparative Methods
 #
-#   Date:   04.06.2024
 #
 #   Author: Emma Dunne (emma.dunne@fau.de)
 #
 # _________________________________________________________
 #
-#   Cleaning of data for PCM tutorial
+#   0. Cleaning of data for PCM tutorial
 # 
 # *********************************************************
 
