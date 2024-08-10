@@ -2,21 +2,18 @@
 #
 #   Introduction to Phylogenetic Comparative Methods
 #
-#   Date:   04.06.2024
-#
-#   Author: Emma Dunne (emma.dunne@fau.de)
+#   Emma Dunne (emma.dunne@fau.de)
+#   Late updated: August 2024
 #
 # _________________________________________________________
 #
-#   Tutorial using data modified from Thomas et al. (2020)
+#   2. Tutorial using data modified from Thomas et al. (2020)
 #       (https://doi.org/10.1098/rspb.2020.1393)
 # 
 # *********************************************************
 
 
 ## Load packages:
-library(tidyverse)
-library(geiger)
 library(ape)
 library(phytools)
 library(viridis)
@@ -25,7 +22,7 @@ library(viridis)
 
 # Part 1: Data organisation + visualisation ------------------------------------
 
-## First, we need to load the data files that we need for this exercise:
+## First, let's load the data files that we need for this exercise:
 
 ## A. Import the tree file (phylogeny):
 mytree <- read.nexus("data/clean-frog-tree.nex")
@@ -52,7 +49,7 @@ class(mydata) # check
 glimpse(mydata) # columns in a list
 View(mydata) # open a new tab in RStudio
 
-## (You can see the full list of variables and their descriptions in the 00_frogs_cleaning.R script)
+## (You can see the full list of variables and their descriptions in the 01_cleaning.R script)
 
 
 ## Let's do a quick check of the distribution of our data
@@ -103,112 +100,5 @@ plot(frog_contMap, fsize = c(0.4, 1), outline = FALSE, lwd = c(3, 7), leg.txt = 
 ## Q: Do you notice any particular trends across the phylogeny?
 ## Bonus Q: What other traits could you plot on a tree like this?
 ## _______________________________________________________________
-
-
-
-
-# Part 2: Phylogenetic signal --------------------------------------------------
-
-
-## Phylogenetic signal is the pattern where close relatives have more similar 
-##    trait values than more distant relatives. 
-## There are two popular methods for estimating phylogenetic signal:
-##      1. Pagel’s λ (lambda)
-##      2. Blomberg’s K
-
-## First, let's check the phylogenetic signal of frog eye size using Pagel’s λ (lambda)
-
-## Estimate Pagel’s λ (lambda) using the function phylosig() in the package 'phytools'
-lambdaEye <- phylosig(mytree, logEye, method = "lambda", test = TRUE)
-lambdaEye # take a look at the output
-
-## Interpreting the output:
-##    P-value is the p value from a likelihood ratio test testing whether  λ 
-##    is significantly different from 0 (no phylogenetic signal). 
-##    Here λ = 0.814 and P < 0.001. We can interpret this as  λ being significantly 
-##    different from 0, i.e. there is significant phylogenetic signal in log eye size
-
-
-## Next, the same but with Blomberg’s K, also using the phytools package:
-KEye <- phylosig(mytree, logEye, method = "K", test = TRUE, nsim = 1000)
-## Additionally we add the argument nsim = 1000. This is because we need to use a 
-##    randomisation test to determine whether K is significantly different from 0
-KEye
-
-## Interpreting the output:
-##    The observed value of K is  compared to the randomized values. The p value
-##    tells us how many times out of 1000, a randomised value of K is more extreme
-##    than the observed value. If this number is low, the p value is low (e.g. 
-##    if 5 out of 1000 randomised values of K are more extreme than the observed
-##    value p = 5/1000 = 0.005)
-
-
-##______________________________________
-## Bonus exercise:
-##  - What is λ for snout vent length?
-##______________________________________
-
-
-
-
-# Evolutionary model fitting analyses -------------------------------------
-
-
-## Let's set up an evolutionary model-fitting analysis to characterize the 
-##    evolutionary mode of frog eye size across the phylogeny
-
-## We'll fit two commonly used evolutionary models to the data: 
-##      (1) the Brownian motion (BM) model 
-##      (2) the single peak Ornstein-Uhlenbeck (OU) model
-
-## We will use the same log-transformed eye size data from above:
-head(logEye) # Look at the first few rows
-
-## Next, let's reorder the tree and trait data so that they match:
-mydata <- mydata[match(mytree$tip.label, mydata$Binomial), ]
-
-## Now let's fit our models!
-
-## (1) Fit the Brownian model:
-BM <- fitContinuous(mytree, logEye, model = c("BM"))
-BM # check the output 
-
-##________________________________________________________________
-## Q: Can you see the model's 2 parameters (i.e. sigma^2 and z0)?
-##________________________________________________________________
-
-
-## (2) Fit the Ornstein-Uhlenbeck (OU) model
-OU <- fitContinuous(mytree, logEye, model = c("OU"))
-OU # check the output
-
-
-## Now, let's compare the models using AIC 
-## A lower 'fit' value indicates the preferred, or 'best' model:
-AICscores <- setNames(c(BM$opt$aic, OU$opt$aic), c("BM","OU"))
-aicw(AICscores)
-<- <- <- 
-## ___________________________________________________________
-## Q: Which is the 'best' model?
-## Q: What does this tell you about frog eye size evolution?
-## ___________________________________________________________
-
-
-
-
-# Independent work --------------------------------------------------------
-
-## In the data folder there is another tree (primate-tree.nex) and trait 
-##    dataset (primate-data.csv) for investigating the evolution of primate 
-##    life-history variables, These data come from the PanTHERIA database 
-##    (https://esajournals.onlinelibrary.wiley.com/doi/10.1890/08-1494.1) 
-##    and 10kTrees (https://10ktrees.nunn-lab.org/)
-
-## YOUR TASK:
-##   Take the we have just used and modify it to examine the phylogenetic
-##    signal of body mass evolution and/or gestation length in primates
-
-
-
 
 

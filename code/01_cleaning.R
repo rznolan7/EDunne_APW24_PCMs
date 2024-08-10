@@ -2,12 +2,12 @@
 #
 #   Introduction to Phylogenetic Comparative Methods
 #
-#
-#   Author: Emma Dunne (emma.dunne@fau.de)
+#   Emma Dunne (emma.dunne@fau.de)
+#   Late updated: August 2024
 #
 # _________________________________________________________
 #
-#   0. Cleaning of data for PCM tutorial
+#   1. Cleaning and visualising tree + trait data
 # 
 # *********************************************************
 
@@ -15,6 +15,9 @@
 ## Load packages:
 library(tidyverse)
 library(geiger)
+library(ape)
+library(phytools)
+library(viridis)
 
 ## This short script cleans up our phylogenetic and trait data
 ## This is an important step in any form of data analysis
@@ -23,6 +26,10 @@ library(geiger)
 ## (https://doi.org/10.1098/rspb.2020.1393)
 ## If you want to reuse this data, please remember to cite this paper 
 ## And don't forget to always cite your R packages!
+
+
+
+# 1. Load and explore data + tree -----------------------------------------
 
 
 ## Load tree file (in nexus format):
@@ -43,6 +50,9 @@ frog_data <- read_csv("data/frog-eyes.csv")
 # - rootmass - cube root of the body mass.
 # - eyesize - eye size (in mm) for the species. This is an everage across left and right eyes from three individuals per species
 
+
+
+# 2. Clean up data + tree -------------------------------------------------
 
 ## Next we need to make sure our trait data matches to our phylogeny
 ## First, add underscores to data file
@@ -81,4 +91,87 @@ write_csv(mydata, file = "data/clean-frog-data.csv")
 
 # Write the cleaned tree to a new file
 write.nexus(mytree, file = "data/clean-frog-tree.nex")
+
+
+
+
+# 3. Data organisation + visualisation ------------------------------------
+
+
+## First, let's take a look at the tree:
+## Plot the tree as a circular/fan phylogeny with small labels
+plot(mytree, cex = 0.2, typ = "fan", no.margin = TRUE)
+
+## Look at the tree summary:
+mytree
+
+## _________________________________________
+## Q: How many frog species are on the tree?
+## _________________________________________
+
+
+## B. Load the trait data:
+mydata <- read_csv("data/clean-frog-data.csv")
+
+## Convert to a data frame
+mydata <- as.data.frame(mydata)
+class(mydata) # check
+
+## Take a look at the variables
+glimpse(mydata) # columns in a list
+View(mydata) # open a new tab in RStudio
+
+## (You can see the full list of variables and their descriptions in the 01_cleaning.R script)
+
+
+## Let's do a quick check of the distribution of our data
+## First, the raw continuous data:
+p1 <- ggplot(mydata, aes(x = eyesize)) +
+  geom_histogram(bins = 20, fill = "turquoise4") +
+  theme_bw(base_size = 14)
+p1 
+
+## And now with it log-tranformed:
+p2 <- ggplot(mydata, aes(x = log(eyesize))) +
+  geom_histogram(bins = 20, fill = "chartreuse4") +
+  theme_bw(base_size = 14)
+p2
+
+## _______________________________________________
+## Q: Why might we log-transform continuous data?
+## _______________________________________________
+
+
+## Take our trait of interest (i.e. eyesize) and log transform it:
+logEye <- log(pull(mydata, eyesize))
+names(logEye) <- mydata$Binomial # give these values names (i.e. species names)
+head(logEye) # look at the first few rows
+
+
+
+## Next, let's plot these trait data onto the phylogeny!
+## The contMap() function in the R package 'phytools' projects the observed and 
+##    reconstructed values of a continuous trait onto the edges of a tree using a 
+##    color gradient. We will use the colour gradients from another R package, 
+##    'viridis' to ensure the output is as readable as possible.
+
+
+## Create "contMap" object using this log-transformed data:
+frog_contMap <- contMap(mytree, logEye, 
+                        plot=FALSE, res=200)
+
+## Set up the colour gradient:
+n <- length(frog_contMap$cols) # number of colour breaks
+frog_contMap$cols[1:n] <- viridis(n) # using the gradient 'viridis' ( = yellow to purple)
+
+## Plot the tree:
+plot(frog_contMap, fsize = c(0.4, 1), outline = FALSE, lwd = c(3, 7), leg.txt = "Eye size (log)")
+
+
+## _______________________________________________________________
+## Q: Do you notice any particular trends across the phylogeny?
+## Bonus Q: What other traits could you plot on a tree like this?
+## _______________________________________________________________
+
+
 
