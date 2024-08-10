@@ -98,6 +98,16 @@ write.nexus(mytree, file = "data/clean-frog-tree.nex")
 # 3. Data organisation + visualisation ------------------------------------
 
 
+## Before any analyses, its good to check the structure of your tree
+## We need it to dichotomous, i.e. has no polytomies, rooted, and ultrametric.
+## Check whether the tree is binary
+is.binary(mytree)
+## Check whether the tree is rooted 
+is.rooted(mytree)
+## Check whether the tree is ultrametric
+is.ultrametric(mytree)
+
+
 ## First, let's take a look at the tree:
 ## Plot the tree as a circular/fan phylogeny with small labels
 plot(mytree, cex = 0.2, typ = "fan", no.margin = TRUE)
