@@ -21,21 +21,21 @@
 ## First, let's check the phylogenetic signal of frog eye size using Pagel’s λ (lambda)
 
 ## Estimate Pagel’s λ (lambda) using the function phylosig() in the package 'phytools'
-lambdaEye <- phylosig(mytree, logEye, method = "lambda", test = TRUE)
-lambdaEye # take a look at the output
+lambdaTrait <- phylosig(mytree, logTrait, method = "lambda", test = TRUE)
+lambdaTrait # take a look at the output
 
 ## Interpreting the output:
 ##    P-value is the p value from a likelihood ratio test testing whether  λ 
 ##    is significantly different from 0 (no phylogenetic signal). 
 ##    Here λ = 0.814 and P < 0.001. We can interpret this as  λ being significantly 
-##    different from 0, i.e. there is significant phylogenetic signal in log eye size
+##    different from 0, i.e. there is significant phylogenetic signal in log Trait size
 
 
 ## Next, the same but with Blomberg’s K, also using the phytools package:
-KEye <- phylosig(mytree, logEye, method = "K", test = TRUE, nsim = 1000)
+KTrait <- phylosig(mytree, logTrait, method = "K", test = TRUE, nsim = 1000)
 ## Additionally we add the argument nsim = 1000. This is because we need to use a 
 ##    randomisation test to determine whether K is significantly different from 0
-KEye
+KTrait
 
 ## Interpreting the output:
 ##    The observed value of K is  compared to the randomized values. The p value

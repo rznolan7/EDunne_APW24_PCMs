@@ -36,7 +36,7 @@ library(viridis)
 frog_tree <- read.nexus("data/frog-tree.nex")
 
 ## Load the trait data:
-frog_data <- read_csv("data/frog-eyes.csv")
+frog_data <- read.csv("data/frog-eyes.csv")
 
 ## Full list of variables and their descriptions:
 # - Binomial - the species binomial name
@@ -48,7 +48,7 @@ frog_data <- read_csv("data/frog-eyes.csv")
 # - SVL - snout vent length (in mm). This is a common way to measure body size in amphibians.
 # - mass - body mass (in g)
 # - rootmass - cube root of the body mass.
-# - eyesize - eye size (in mm) for the species. This is an everage across left and right eyes from three individuals per species
+# - eyesize - eye size (in mm) for the species. This is an average across left and right eyes from three individuals per species
 
 
 
@@ -129,7 +129,7 @@ class(mydata) # check
 
 ## Take a look at the variables
 glimpse(mydata) # columns in a list
-View(mydata) # open a new tab in RStudio
+#View(mydata) # open a new tab in RStudio
 
 ## (You can see the full list of variables and their descriptions in the 01_cleaning.R script)
 
@@ -150,12 +150,16 @@ p2
 ## _______________________________________________
 ## Q: Why might we log-transform continuous data?
 ## _______________________________________________
-
+#Making the data log-transformed helps make it less skewed, which can be useful for statistical tests.
+#choose which trait to plot
+trait <- "eyesize"
+trait <- "SVL"
+trait <- "mass"
 
 ## Take our trait of interest (i.e. eyesize) and log transform it:
-logEye <- log(pull(mydata, eyesize))
-names(logEye) <- mydata$Binomial # give these values names (i.e. species names)
-head(logEye) # look at the first few rows
+logTrait <- log(pull(mydata, trait))
+names(logTrait) <- mydata$Binomial # give these values names (i.e. species names)
+head(logTrait) # look at the first few rows
 
 
 
@@ -167,10 +171,10 @@ head(logEye) # look at the first few rows
 
 
 ## Create "contMap" object using this log-transformed data:
-frog_contMap <- contMap(mytree, logEye, 
+frog_contMap <- contMap(mytree, logTrait, 
                         plot=FALSE, res=200)
 
-## Set up the colour gradient:
+## Set up the colour gradient: uses visidis package
 n <- length(frog_contMap$cols) # number of colour breaks
 frog_contMap$cols[1:n] <- viridis(n) # using the gradient 'viridis' ( = yellow to purple)
 

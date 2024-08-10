@@ -20,7 +20,7 @@
 ##      (2) the single peak Ornstein-Uhlenbeck (OU) model
 
 ## We will use the same log-transformed eye size data from above:
-head(logEye) # Look at the first few rows
+head(logTrait) # Look at the first few rows
 
 ## Next, let's reorder the tree and trait data so that they match:
 mydata <- mydata[match(mytree$tip.label, mydata$Binomial), ]
@@ -28,7 +28,7 @@ mydata <- mydata[match(mytree$tip.label, mydata$Binomial), ]
 ## Now let's fit our models!
 
 ## (1) Fit the Brownian model:
-BM <- fitContinuous(mytree, logEye, model = c("BM"))
+BM <- fitContinuous(mytree, logTrait, model = c("BM"))
 BM # check the output 
 
 ##________________________________________________________________
@@ -37,7 +37,7 @@ BM # check the output
 
 
 ## (2) Fit the Ornstein-Uhlenbeck (OU) model
-OU <- fitContinuous(mytree, logEye, model = c("OU"))
+OU <- fitContinuous(mytree, logTrait, model = c("OU"))
 OU # check the output
 
 
@@ -45,6 +45,30 @@ OU # check the output
 ## A lower 'fit' value indicates the preferred, or 'best' model:
 AICscores <- setNames(c(BM$opt$aic, OU$opt$aic), c("BM","OU"))
 aicw(AICscores)
+
+# GEIGER-fitted comparative model of continuous data
+# fitted ‘OU’ model parameters:
+#   alpha = 1.268335                  ##the alpha is positive and therefore the optimum is nonzero
+# sigsq = 0.657174
+# z0 = 1.635270
+# 
+# model summary:
+#   log-likelihood = -106.224403
+# AIC = 218.448807
+# AICc = 218.576466
+# free parameters = 3
+# 
+# Convergence diagnostics:
+#   optimization iterations = 100
+# failed iterations = 0
+# number of iterations with same best fit = 41
+# frequency of best fit = 0.410
+# 
+# object summary:
+#   'lik' -- likelihood function
+# 'bnd' -- bounds for likelihood search
+# 'res' -- optimization iteration summary
+# 'opt' -- maximum likelihood parameter estimates
 
   ## ___________________________________________________________
   ## Q: Which is the 'best' model?
